@@ -1,0 +1,106 @@
+.method_container, .quiz_container {
+    padding-top: 1rem;
+    overflow-y: scroll;
+}
+.paragraph_container {
+    padding-top: 1rem;
+}
+.paragraph_ueberschrift {
+    font-size: 1.5em;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+}
+.paragraph {
+    font-size: 1.1em;
+    color: var(--foreground);
+    margin-bottom: .75rem;
+}
+
+
+/* QUIZ */
+.quiz_question_container {
+    background-color: rgba(0, 0, 0, .1);
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+}
+.quiz_options_container {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.quiz_option {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 1rem 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+}
+.quiz_option:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+.quiz_option.selected .option_checkbox {
+    background-color: #1f7dc0;
+}
+.quiz_option .option_checkbox {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.check_answer_container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    gap: 1rem;
+}
+.remove_button, .check_button {
+    border: none;
+    outline: none;
+    padding: .75rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.remove_button {
+    background-color: #ff4d4d;
+    color: white;
+}
+.check_button {
+    background-color: #1f7dc0;
+    color: white;
+}
+.remove_button:hover, .check_button:hover {
+    opacity: .8;
+}
+
+.feedback_container {
+    margin-top: 1rem;
+}
+.feedback_container p {
+    font-size: 1.1em;
+    color: var(--foreground);
+    margin-bottom: .75rem;
+}
+
+.finish_button, .start_btn {
+    background-color: var(--foreground);
+    color: var(--background);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.finish_button:hover, .start_btn:hover {
+    opacity: 0.8;
+}

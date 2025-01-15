@@ -1,0 +1,85 @@
+.color_mode {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: var(--foreground);
+    border-radius: 50%;
+    color: var(--background);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .color_mode:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+.main {
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    max-height: 900px;
+}
+.header {
+    height: 120px;
+}
+.progress {
+    height: 5px;
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.progress_left {
+    height: 5px;
+    background-color: #2670b5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.progress_right {
+    height: 5px;
+    background-color: var(--foreground);
+    opacity: .2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.timer {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.content {
+    height: 800px;
+    overflow: scroll;
+    flex: 1;
+}
+.footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.button {
+    background-color: var(--foreground);
+    color: var(--background);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button:hover {
+    opacity: 0.8;
+}

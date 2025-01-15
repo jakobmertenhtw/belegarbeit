@@ -14,7 +14,7 @@ export default function Quiz2() {
             correctAnswerIndex: [1]
         },
         {
-            question: "Welcher Type von Gütern hat den konstantesten Verbrauch?",
+            question: "Welcher Typ von Gütern hat den konstantesten Verbrauch?",
             options: [
                 "X-Güter",
                 "Y-Güter",

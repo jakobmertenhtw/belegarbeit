@@ -6,7 +6,7 @@ export default function Start({
   return (
     <div className="method_container">
       <p className="paragraph">
-        Im Folgenden wirst du drei wichtige Methoden der Logisti kennenlernen,
+        Im Folgenden wirst du drei wichtige Methoden der Logistik kennenlernen,
         die in der Praxis angewendet werden: die ABC-Analyse, die XYZ-Analyse
         und die Einteilung in verschiedene Fertigungsstrategien.
       </p>

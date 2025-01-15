@@ -5,6 +5,7 @@ import React, { useState } from "react";
 export default function QuizQuestion({ quiz }: { quiz: QuizQuestion }) {
   const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
   const [feedBackText, setFeedBackText] = useState<string>("");
+  const [isCorrect, setIsCorrect] = useState<boolean>(false);
 
   const handleOptionClick = (index: number) => {
     if (selectedOptions.includes(index)) {
@@ -26,9 +27,9 @@ export default function QuizQuestion({ quiz }: { quiz: QuizQuestion }) {
     }
 
     if (isCorrect) {
-      setFeedBackText("Correct Answer");
+      setIsCorrect(true);
     } else {
-      setFeedBackText("Incorrect Answer");
+      setFeedBackText("Nicht richtig, versuche es noch einmal");
     }
   }
 
@@ -40,6 +41,11 @@ export default function QuizQuestion({ quiz }: { quiz: QuizQuestion }) {
   return (
     <div className="quiz_question_container">
       <h3>{quiz.question}</h3>
+      {isCorrect && (
+        <div className="correct_answer_container">
+          <p>Gut gemacht, du hast die Frage korrekt beantwortet.</p>
+        </div>
+      )}
       <div className="quiz_options_container">
         {quiz.options.map((option, index) => (
           <div

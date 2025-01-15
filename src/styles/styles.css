@@ -19,18 +19,24 @@
 
 /* QUIZ */
 .quiz_question_container {
-    background-color: rgba(0, 0, 0, .1);
+    border-top: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
     margin: 1rem 0;
     padding: 1.5rem 1rem;
     border-radius: 15px;
 }
+.correct_answer_container {
+    color: #1fc045;
+    font-weight: 700;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
 .quiz_options_container {
-    border-top: 1px solid rgba(0, 0, 0, .1);
     margin-top: 10px;
     padding-top: 10px;
 }
 .quiz_option {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: color-mix(in srgb, var(--foreground) 5%, transparent);    
     padding: 1rem 10px;
     margin-top: 10px;
     border-radius: 10px;
@@ -40,7 +46,7 @@
     transition: all .2s;
 }
 .quiz_option:hover {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(--background, .1);
 }
 .quiz_option.selected .option_checkbox {
     background-color: #1f7dc0;

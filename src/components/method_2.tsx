@@ -27,17 +27,29 @@ export default function Method2() {
       </div>
       <div className="paragraph_container">
         <h3 className="paragraph_ueberschrift">XYZ-Analyse</h3>
-        <p className="paragraph">
-          Die XYZ-Analyse ist eine Methode, mit der Materialien oder Produkte
-          anhand ihrer Verbrauchsschwankungen kategorisiert werden. Ziel ist es,
-          besser zu verstehen, wie regelmäßig ein Material oder Produkt
-          verbraucht wird, und darauf basierend geeignete Lager- und
-          Beschaffungsstrategien zu entwickeln. <br />
-          X-Güter: Haben einen konstanten und vorhersehbaren Verbrauch <br />
-          Y-Güter: Haben mittelstarke Verbrauchsschwankungen, die oft saisonal oder trendbedingt sind. <br />
-          Z-Güter: Haben unregelmäßigen und schwer vorhersagbaren Verbrauch <br />
-          Durch eine Einteilung in diese Kategorien können gezielte Maßnahmen ergriffen werden, z.B. für die Beschaffung, Lagerhaltung oder Produktionsplanung.
-        </p>
+        <div className="dividing_container">
+          <div className="dividing_element">
+            <p className="paragraph">
+              Die XYZ-Analyse ist eine Methode, mit der Materialien oder
+              Produkte anhand ihrer Verbrauchsschwankungen kategorisiert werden.
+              Ziel ist es, besser zu verstehen, wie regelmäßig ein Material oder
+              Produkt verbraucht wird, und darauf basierend geeignete Lager- und
+              Beschaffungsstrategien zu entwickeln. <br />
+              X-Güter: Haben einen konstanten und vorhersehbaren Verbrauch{" "}
+              <br />
+              Y-Güter: Haben mittelstarke Verbrauchsschwankungen, die oft
+              saisonal oder trendbedingt sind. <br />
+              Z-Güter: Haben unregelmäßigen und schwer vorhersagbaren Verbrauch{" "}
+              <br />
+              Durch eine Einteilung in diese Kategorien können gezielte
+              Maßnahmen ergriffen werden, z.B. für die Beschaffung, Lagerhaltung
+              oder Produktionsplanung.
+            </p>
+          </div>
+          <div className="dividing_element">
+            <img src="/images/XYZ.png" alt="Abbild XYZ Analyse" className="image_element" />
+          </div>
+        </div>
       </div>
     </div>
   );

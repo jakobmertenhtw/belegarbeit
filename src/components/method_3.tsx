@@ -2,6 +2,7 @@ export default function Method3() {
   return (
     <div className="method_container">
       <div className="paragraph_container">
+        <img src="/images/Fertigungsstrategien.png" alt="Abbild Fertigungsstrategien" className="image_element" />
         <h3>Verschiedene Fertigungsstrategien</h3>
         <p className="paragraph">
           Unser Unternehmen erhält Bestellungen aus unterschiedlichen

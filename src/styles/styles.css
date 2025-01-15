@@ -104,3 +104,16 @@
 .finish_button:hover, .start_btn:hover {
     opacity: 0.8;
 }
+
+.dividing_container {
+    display: flex;
+    gap: 1rem;
+}
+.dividing_element {
+    flex: 1;
+}
+.image_element {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
